@@ -1,0 +1,62 @@
+/* Products.css */
+
+.products-display-container {
+    
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.products-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.products-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.products-display {
+    margin-top: 30px;
+}
+
+.products-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+    margin-left: 3%;
+}
+
+
+.products-item {
+    padding: 15px; /* Adjusted padding */
+    margin-bottom: 10px; /* Adjusted margin */
+    background-color: #ffffff; /* Optional: background color for better visualization */
+    height: 200px; /* Decreased height */
+}
+
+/* Media Query for Tablets */
+@media (max-width: 1050px) {
+    .products-display h2 {
+        font-size: 22px; /* Decreased font size */
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 750px) {
+    .products-display h2 {
+        font-size: 20px; /* Decreased font size */
+    }
+
+    .products-display-list {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Decreased max width */
+        gap: 1px; /* Reduced gap */
+    }
+
+    .products-item {
+        padding: 10px; /* Adjusted padding for smaller screens */
+        margin-bottom: 5px; /* Adjusted margin for smaller screens */
+        height: 150px; /* Decreased height for smaller screens */
+    }
+}

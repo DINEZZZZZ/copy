@@ -1,0 +1,134 @@
+.navbar {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 4% 0% 4%;
+  }
+  
+  .navbar-logo {
+    color: tomato;
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    color: #000000;
+    font-size: 18px;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  
+
+  
+  /* Navbar.css */
+
+.navbar-btn {
+ font-size: larger;
+ cursor: pointer;
+ 
+}
+
+.navbar-btn:hover {
+  background-color: #fff4f2;
+}
+
+  .navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+  }
+  
+  .navbar li {
+    cursor: pointer;
+  }
+  
+  
+  @media (max-width: 1050px) {
+    .navbar-logo {
+      width: 140px;
+    }
+    .navbar-menu {
+      gap: 20px;
+      font-size: 17px;
+    }
+    .navbar-right {
+      gap: 30px;
+    }
+    .navbar-right{
+      padding: 5px 8px;
+    }
+   
+  }
+  
+  @media (max-width: 900px) {
+    .navbar-logo {
+      width: 140px;
+    }
+    .navbar-menu {
+      gap: 15px;
+      font-size: 16px;
+    }
+    .navbar-right {
+      gap: 20px;
+    }
+   
+  }
+  
+  @media (max-width: 750px) {
+    .navbar-menu {
+      display: none;
+    }
+  
+  }
+  /* Navbar.css */
+
+/* Add a class to target the hamburger menu icon */
+.navbar-bars-icon {
+  display: none; /* Hide by default */
+}
+
+/* Media Query for Small Screens (e.g., Mobile Devices) */
+/* Media Query for Larger Screens (e.g., Desktops) */
+@media (min-width: 769px) {
+  .navbar-bars-icon {
+    display: none; /* Hide the hamburger menu icon on larger screens */
+  } 
+}
+
+
+
+@media (min-width: 769px) {
+  .navbar-menu {
+    display: flex; 
+  }
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 20px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,116 @@
+.container-high {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+    background-color: black;
+  }
+  
+  .back-button:focus {
+    outline: none;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .add-products, button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .add-products:hover, button:hover {
+    background-color: #45a049;
+  }
+  
+  .product-add-del-div {
+    padding: 20px;
+    margin: 20px;
+    font-size: x-large;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .products-add-btn {
+    background-color: rgb(23, 135, 190);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .products-del-btn {
+    background-color: red;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Media Query for Mobile Devices */
+  @media only screen and (max-width: 768px) {
+    .container-high {
+  
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      
+      height: auto;
+      margin-top: 30px;
+      font-weight: 500;
+    }
+    .product-add-del-div{
+        font-size: small;
+        display: flex;
+        align-items: center;
+ 
+        
+    }
+    
+    .back-button {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .products-add-btn{
+        width: 60px;
+        height: 30px;
+        font-size: smaller;
+       margin-right: 10px;
+    }
+    .products-del-btn{
+        width: 60px;
+        height: 30px;
+        font-size: smaller;
+
+    }
+    
+    .add-products, button {
+      margin-right: 0;
+      margin-bottom: 10px;
+      padding: 5px 10px; /* Reduce padding for smaller screens */
+      font-size: 14px; /* Reduce font size for smaller screens */
+    }
+  }
+  
