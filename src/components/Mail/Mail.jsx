@@ -24,7 +24,7 @@ const Mail = () => {
     setError(null);
 
     try {
-      const response = await fetch('http://localhost:8080//subscribe', {
+      const response = await fetch('https://mailsender-production-b0f6.up.railway.app/subscribe', {
         method: 'POST',
         headers: {
           'Content-Type': 'text/plain',

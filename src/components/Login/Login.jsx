@@ -19,7 +19,7 @@ const Login = ({ setShowLogin, setIsAuthenticated }) => {
     setLoading(true); // Set loading to true when making the API request
 
     try {
-      const response = await axios.post('http://localhost:8080/api/v1/signin', {
+      const response = await axios.post('https://lazy-fly-production-e453.up.railway.app/api/v1/signin', {
         username,
         password
       });
