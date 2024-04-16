@@ -17,7 +17,7 @@ const Home = ({setShowLogin}) => {
         <Header/>
         <ExploreMenu category={category} setCategory={setCategory}/>
         <Products/>
-        <hr />
+        <hr className=' mt-10' />
         <Mail/>
         <Footer/>
     </div>
