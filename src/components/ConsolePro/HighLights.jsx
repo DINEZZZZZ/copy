@@ -9,7 +9,7 @@ const HighLights = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/api/highlight/get-products')
+    axios.get('https://lazy-fly-production-e453.up.railway.app/api/highlight/get-products')
       .then(response => {
         setProducts(response.data);
       })

@@ -17,7 +17,7 @@ const EnquireBox = () => {
   };
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/api/highlight/get-product/${id}`)
+    axios.get(`https://lazy-fly-production-e453.up.railway.app/api/highlight/get-product/${id}`)
       .then(response => {
         setProduct(response.data);
         setLoading(false);

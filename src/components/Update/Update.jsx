@@ -41,7 +41,7 @@ const Update = () => {
 
   const loadProduct = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/api/highlight/get-product/${productId}`);
+      const response = await axios.get(`https://lazy-fly-production-e453.up.railway.app/api/highlight/get-product/${productId}`);
       const { data } = response;
       setTitle(data.title);
       setPrice(data.price);
