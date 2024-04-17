@@ -1,13 +1,10 @@
 import React from 'react';
-import './LoadingPage.css'; 
+import './LoadingPage.css'; // Import the CSS file for styling
 
 const LoadingPage = () => {
   return (
     <div className="loading-container">
-      <div className="loading-bar">
-        <div className="loading-fill"></div>
-      </div>
-      <div className="loading-text">Loading...</div>
+      <div className="loader"></div>
     </div>
   );
 };

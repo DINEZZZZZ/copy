@@ -99,12 +99,17 @@ const EnquireBox = () => {
           <h3 className='text-lg font-bold text-green-600 mb-4 mt-8'>Enquire Now</h3>
           <form className='w-full p-4' onSubmit={(e) => handleEnquireNow(e)}>
             <div className="flex flex-col gap-6 px-4">
-              <input type="text" name="customerName" value={customerName} onChange={(e) => setCustomerName(e.target.value)} required placeholder="Customer Name" className="input py-4 px-6 border border-gray-300 rounded-lg text-lg" />
-              <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required className="input py-4 px-6 border border-gray-300 rounded-lg text-lg" />
-              <input type="tel" name="phoneNo" value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)} placeholder="Phone Number" required className="input py-4 px-6 border border-gray-300 rounded-lg text-lg" />
-              <input type="number" name="quantity" value={quantity} onChange={(e) => setQuantity(e.target.value)} placeholder="Quantity" required className="input py-4 px-6 border border-gray-300 rounded-lg text-lg" />
+              <input type="text" name="customerName" value={customerName} onChange={(e) => setCustomerName(e.target.value)} required placeholder="Customer Name" className="input py-3 px-6 border border-gray-300 rounded-lg text-lg" />
+              <input type="email" name="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required className="input py-3 px-6 border border-gray-300 rounded-lg text-lg" />
+              <input type="tel" name="phoneNo" value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)} placeholder="Phone Number" required className="input py-3 px-6 border border-gray-300 rounded-lg text-lg" />
+              <input type="number" name="quantity" value={quantity} onChange={(e) => setQuantity(e.target.value)} placeholder="Quantity" required className="input py-3 px-6 border border-gray-300 rounded-lg text-lg" />
             </div>
-            <button type="submit" className="bg-blue-500 mx-4 text-white px-6 py-3 rounded-lg hover:bg-blue-600 mt-4">Enquire Now</button>
+            <div className="flex justify-center">
+  <button type="submit" className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 mt-4">
+    Enquire Now
+  </button>
+</div>
+
           </form>
         </div>
       </div>

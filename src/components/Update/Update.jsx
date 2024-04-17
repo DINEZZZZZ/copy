@@ -19,7 +19,7 @@ const Update = () => {
     e.preventDefault();
 
     try {
-      await axios.put(`http://localhost:8080/api/highlight/update-product/${productId}`, {
+      await axios.put(`https://lazy-fly-production-e453.up.railway.app/api/highlight/update-product/${productId}`, {
         title,
         price,
         image_URL,

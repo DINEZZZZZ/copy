@@ -1,56 +1,20 @@
 .loading-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  background-color: white;
-  }
-  
-  .loading-bar {
-    width: 30%; /* Adjust width as needed */
-    max-width: 300px; /* Limit maximum width */
-    height: 6px; /* Adjust height as needed */
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 20px;
-  }
-  
-  .loading-fill {
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    animation: fillAnimation 2s linear infinite;
-  }
-  
-  .loading-text {
-    font-size: 24px;
-    color: ;
-    font-family: 'Arial', sans-serif;
-    animation: pulse 1s infinite alternate;
-  }
-  
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.1); }
-  }
-  
-  @keyframes fillAnimation {
-    0% { width: 0%; }
-    100% { width: 100%; }
-  }
-  
-  /* Media queries for responsiveness */
-  @media only screen and (max-width: 600px) {
-    .loading-bar {
-      width: 40%; /* Adjust width for smaller screens */
-    }
-  }
-  
-  @media only screen and (max-width: 400px) {
-    .loading-bar {
-      width: 45%; 
-    }
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader {
+  border: 8px solid #b7b5b5; /* Light grey */
+  border-top: 8px solid black; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
